@@ -50,7 +50,7 @@ router.post('/search', async (req, res) => {
         var index1 = -1;
         var index2 = -1;
         for (var i = 0; i < text[0].text.length; i++) {
-            if (text[0].text.at(i) == ':') {
+            if (text[0].text.charAt(i) == ':') {
                 if (index1 > 0) {
                     index2 = i;
                 } else {
